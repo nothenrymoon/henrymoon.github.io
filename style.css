@@ -1,7 +1,21 @@
+@font-face {
+    font-family: 'MingLiU';
+    src: url('fonts/MingLiU/mingliu.eot');
+    src: url('fonts/MingLiU/mingliu.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MingLiU/mingliu.woff') format('woff'),
+         url('fonts/MingLiU/mingliu.ttf') format('truetype'),
+         url('fonts/MingLiU/mingliu.svg#MingLiU') format('svg');
+    font-weight: 500;
+    font-style: normal
+}
+
 body {
     margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+	font-family: 'MingLiU'
 }
+
+p {color: white}
