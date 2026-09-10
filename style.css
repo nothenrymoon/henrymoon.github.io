@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 487px;
+    height: 865px;
+    background: url("/images/clever.png") no-repeat fixed center;
+}
