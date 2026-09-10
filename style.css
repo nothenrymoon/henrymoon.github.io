@@ -5,9 +5,3 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-.image {
-    width: 162px;
-    height: 288px;
-    background: url("/images/clever.png") no-repeat fixed center;
-}
