@@ -10,13 +10,13 @@ document.querySelectorAll("[data-component]").forEach(async element => {
         let imageChosen = "";
     
         if (hour >= 6 && hour < 12) {
-            imageChosen = "afternoon.jpg";
+            imageChosen = "morning.jpg";
         } else if (hour >= 12 && hour < 18) {
             imageChosen = "afternoon.jpg";
         } else if (hour >= 18 && hour < 22) {
-            imageChosen = "afternoon.jpg";
+            imageChosen = "evening.jpg";
         } else {
-            imageChosen = "afternoon.jpg";
+            imageChosen = "midnight.jpg";
         }
 
         imgElement.src = githubLink.concat(imageChosen);
