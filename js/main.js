@@ -3,7 +3,7 @@ document.querySelectorAll("[data-component]").forEach(async element => {
     element.innerHTML = await response.text();
 
     const imgElement = document.getElementById("coverimage");
-    if (img) {
+    if (imgElement) {
         const hour = new Date().getHours();
 
         const githubLink = "https://nothenrymoon.github.io/images/header_banner/";
