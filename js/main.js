@@ -7,7 +7,7 @@ document.querySelectorAll("[data-component]").forEach(async element => {
         const hour = new Date().getHours();
 
         const githubLink = "https://nothenrymoon.github.io/images/header_banner/";
-        const imageChosen = "";
+        let imageChosen = "";
     
         if (hour >= 6 && hour < 12) {
             imageChosen = "afternoon.jpg";
