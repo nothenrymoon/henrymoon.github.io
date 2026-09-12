@@ -1,16 +1,30 @@
-document.querySelectorAll("[data-component]").forEach(async element => {
-    const response = await fetch(element.dataset.component);
-    element.innerHTML = await response.text();
+await Promise.all(
+    [...document.querySelectorAll("[data-component]")].map(async element => {
+        element.innerHTML = await (
+            await fetch(element.dataset.component)
+        ).text();
+    })
+);
 
-    // Run scripts contained inside the component
-    element.querySelectorAll("script").forEach(oldScript => {
-        const newScript = document.createElement("script");
+const imgElement = document.getElementById("coverimage");
+if (img) {
+    const hour = new Date().getHours();
 
-        [...oldScript.attributes].forEach(attribute => {
-            newScript.setAttribute(attribute.name, attribute.value);
-        });
+    const githubLink = "https://nothenrymoon.github.io/images/header_banner/";
+    const imageChosen = "";
+    
+    if (hour >= 6 && hour < 12) {
+        imageChosen = "afternoon.jpg";
+    } else if (hour >= 12 && hour < 18) {
+        imageChosen = "afternoon.jpg";
+    } else if (hour >= 18 && hour < 22) {
+        imageChosen = "afternoon.jpg";
+    } else {
+        imageChosen = "afternoon.jpg";
+    }
 
-        newScript.textContent = oldScript.textContent;
-        oldScript.replaceWith(newScript);
-    });
-});
+    imgElement.src = githubLink.concat(imageChosen);
+
+    console.log("Hello, world!");
+    console.log(githubLink.concat(imageChosen););
+}
