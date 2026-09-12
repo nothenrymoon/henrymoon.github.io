@@ -20,8 +20,5 @@ document.querySelectorAll("[data-component]").forEach(async element => {
         }
 
         imgElement.src = githubLink.concat(imageChosen);
-
-        console.log("Hello, world!");
-        console.log(githubLink.concat(imageChosen););
     }
 });
